@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:src="@drawable/main_top"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:src="@drawable/main_bottom"
+               android:layout_alignParentBottom="true"
+    />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:src="@drawable/signup_top"
+               android:scaleX="-1"
+               android:layout_alignParentRight="true"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:src="@drawable/login_bottom"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentBottom="true"/>
+    <ImageView android:layout_width="124dp" android:layout_height="124dp"
+    android:layout_marginTop="150dp"
+               android:id="@+id/image"
+               android:src="@drawable/profile"
+    android:layout_centerHorizontal="true"/>
+  <androidx.appcompat.widget.Toolbar android:layout_width="match_parent" android:layout_height="wrap_content"
+  android:id="@+id/toolbar"
+  android:background="@android:color/transparent"
+  android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+  style="@style/ThemeOverlay.AppCompat.Dark"/>
+    <androidx.cardview.widget.CardView
+          android:layout_marginTop="30dp"
+            android:id="@+id/c1"
+            android:padding="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp"
+           android:layout_below="@+id/image"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="match_parent">
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:text="Email"
+                          android:textSize="16sp"
+                          android:textColor="@android:color/background_dark"
+                          android:shadowColor="@android:color/background_dark"
+                          android:padding="8dp"
+
+                />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="16sp"
+                          android:layout_marginLeft="5dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:shadowColor="@android:color/holo_red_dark"
+                          android:drawableRight="@drawable/next_foreground"
+                android:id="@+id/txtemai"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_marginTop="10dp"
+                          android:orientation="horizontal"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:text="Sex"
+                          android:textSize="16sp"
+                          android:textColor="@android:color/background_dark"
+                          android:shadowColor="@android:color/background_dark"
+                          android:padding="8dp"
+
+                />
+                <EditText android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textSize="16sp"
+                          android:layout_marginLeft="5dp"
+                          android:background="@android:color/transparent"
+                          android:textColor="@android:color/holo_red_dark"
+                          android:shadowColor="@android:color/holo_red_dark"
+                          android:drawableRight="@drawable/next_foreground"
+                          android:id="@+id/editsex"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_marginTop="10dp"
+                          android:orientation="horizontal"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:text="Full Name"
+                          android:textSize="16sp"
+                          android:textColor="@android:color/background_dark"
+                          android:shadowColor="@android:color/background_dark"
+                          android:padding="8dp"
+
+                />
+                <EditText android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textSize="16sp"
+                          android:layout_marginLeft="5dp"
+                          android:background="@android:color/transparent"
+                          android:textColor="@android:color/holo_red_dark"
+                          android:shadowColor="@android:color/holo_red_dark"
+                          android:drawableRight="@drawable/next_foreground"
+                          android:id="@+id/editname"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout android:layout_width="match_parent"
+                  android:id="@+id/l2"
+                  android:layout_below="@+id/c1"
+                  android:layout_marginTop="10dp"
+                  android:orientation="horizontal"
+                  android:layout_height="wrap_content">
+        <View android:layout_width="wrap_content" android:layout_height="1.2dp"
+              android:background="@android:color/background_dark"
+              android:layout_weight="1"
+              android:layout_marginRight="10dp"
+              android:layout_gravity="center"
+        android:layout_marginLeft="30dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:layout_gravity="center"
+                  android:text="Khác"
+                  android:textSize="16sp"
+                  android:textColor="@android:color/background_dark"
+                  android:shadowColor="@android:color/background_dark"
+                  android:padding="8dp"
+
+        />
+        <View android:layout_width="wrap_content"
+              android:layout_weight="1"
+              android:layout_marginRight="30dp"
+              android:layout_gravity="center"
+              android:layout_height="1.2dp"
+              android:background="@android:color/background_dark"
+              android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+
+            android:layout_below="@+id/l2"
+            android:id="@+id/c2"
+
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="match_parent">
+            <LinearLayout android:layout_width="match_parent"
+
+                          android:orientation="horizontal"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:text="Change Pass"
+                          android:textSize="16sp"
+                          android:layout_gravity="center"
+                          android:textColor="@android:color/background_dark"
+                          android:shadowColor="@android:color/background_dark"
+                          android:padding="8dp"
+
+                />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:paddingTop="12dp"
+                          android:text="*******"
+                          android:textSize="22sp"
+                          android:layout_gravity="center"
+                          android:textColor="@android:color/background_dark"
+                          android:shadowColor="@android:color/background_dark"
+                          android:drawablePadding="8dp"
+                        android:drawableRight="@drawable/next_foreground"
+
+                />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:background="@drawable/custom_back_ground_splasscreen"
+            android:layout_marginTop="40dp"
+            android:textColor="@android:color/background_light"
+            android:shadowColor="@android:color/background_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/btnsave"
+            android:text="Save"
+            android:layout_below="@+id/c2"
+    android:layout_centerHorizontal="true"/>
+</RelativeLayout>

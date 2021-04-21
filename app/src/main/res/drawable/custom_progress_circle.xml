@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <shape
+            android:thicknessRatio="18"
+            android:useLevel="false"
+    android:shape="ring">
+       <solid
+       android:color="@android:color/holo_orange_dark"/>
+    </shape>
+</item>
+    <item>
+        <shape
+                android:thicknessRatio="18"
+                android:useLevel="true"
+                android:shape="ring">
+            <gradient
+            android:startColor="#4CAF50"
+            android:endColor="#E81909"/>
+        </shape>
+    </item>
+</layer-list>

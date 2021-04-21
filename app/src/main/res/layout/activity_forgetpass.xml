@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:src="@drawable/main_top"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+               android:layout_alignParentRight="true"
+   android:layout_alignParentBottom="true"
+    android:src="@drawable/login_bottom"/>
+    <ImageView android:layout_width="wrap_content"
+               android:layout_alignParentBottom="true"
+               android:layout_height="wrap_content"
+    android:src="@drawable/main_bottom"/>
+    <ImageView
+            android:scaleX="-1"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+
+               android:layout_height="wrap_content"
+               android:src="@drawable/signup_top"/>
+    <androidx.appcompat.widget.Toolbar android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:id="@+id/toolbar"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    style="@style/ThemeOverlay.AppCompat.Dark"/>
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:id="@+id/edit"
+    android:hint="Enter Email">
+        <EditText
+                android:layout_marginBottom="10dp"
+                android:id="@+id/editemail"
+                android:shadowColor="@android:color/background_dark"
+                android:textColor="@android:color/background_dark"
+                android:layout_width="match_parent"
+                  android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="120dp"
+        android:background="@drawable/custom_back_ground_splasscreen"
+        android:elevation="5dp"
+        android:shadowColor="@android:color/background_light"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+</RelativeLayout>

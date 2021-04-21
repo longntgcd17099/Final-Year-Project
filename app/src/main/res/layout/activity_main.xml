@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:src="@drawable/main_top"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+               android:layout_alignParentRight="true"
+   android:layout_alignParentBottom="true"
+    android:src="@drawable/login_bottom"/>
+    <ImageView android:layout_width="wrap_content"
+               android:layout_alignParentBottom="true"
+               android:layout_height="wrap_content"
+    android:src="@drawable/main_bottom"/>
+    <ImageView
+            android:scaleX="-1"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+
+               android:layout_height="wrap_content"
+               android:src="@drawable/signup_top"/>
+     <Button
+             android:id="@+id/btnlogin"
+             android:background="@drawable/custom_back_ground_splasscreen"
+             android:textAllCaps="false"
+             android:elevation="5dp"
+             android:layout_width="match_parent"
+             android:layout_marginLeft="60dp"
+             android:layout_marginRight="60dp"
+             android:text="Login"
+             android:textSize="18sp"
+             android:textColor="@android:color/background_light"
+             android:shadowColor="@android:color/background_light"
+             android:layout_height="wrap_content"
+     android:layout_centerInParent="true"/>
+    <Button
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/btnlogin"
+            android:id="@+id/btnsignup"
+            android:background="@drawable/custom_back_ground_splasscreen"
+            android:textAllCaps="false"
+            android:elevation="5dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:text="Sign Up"
+            android:textSize="18sp"
+            android:textColor="@android:color/background_light"
+            android:shadowColor="@android:color/background_light"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+</RelativeLayout>

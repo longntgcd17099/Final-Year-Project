@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<ImageView
+
+        android:id="@+id/bg"
+       android:scaleType="fitXY"
+        android:src="@drawable/background_sign"
+        android:layout_width="match_parent"
+           android:layout_height="340dp"/>
+    <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            style="@style/ThemeOverlay.AppCompat.Dark"
+            app:title=""
+            android:background="@android:color/transparent"
+            android:id="@+id/toolbar"
+    />
+    <ImageView
+
+            android:id="@+id/l1"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:src="@drawable/light1"
+    android:layout_marginLeft="30dp"/>
+    <ImageView
+            android:id="@+id/l2"
+            android:layout_centerHorizontal="true"
+
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:src="@drawable/light2"
+               android:layout_marginLeft="30dp"/>
+    <ImageView
+
+          android:layout_marginTop="100dp"
+            android:layout_toRightOf="@id/l2"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:src="@drawable/clock"
+            android:layout_marginLeft="70dp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:text="LoGin"
+              android:textStyle="bold"
+              android:textSize="32sp"
+              android:shadowColor="@android:color/background_light"
+              android:textColor="@android:color/background_light"
+              android:layout_marginTop="200dp"
+    android:layout_centerHorizontal="true"/>
+      <androidx.cardview.widget.CardView
+             android:id="@+id/c1"
+              app:cardElevation="10dp"
+              app:cardCornerRadius="15dp"
+              android:layout_marginRight="40dp"
+              android:layout_marginLeft="40dp"
+              android:layout_below="@+id/bg"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+          <LinearLayout
+                  android:padding="8dp"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent" android:layout_height="wrap_content">
+              <com.google.android.material.textfield.TextInputLayout
+                      android:layout_width="match_parent"
+                         android:hint="Enter Email"
+                      android:padding="8dp"
+                      android:layout_height="wrap_content">
+<EditText
+
+        android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="16sp"
+
+          android:textColor="@android:color/background_dark"
+          android:shadowColor="@android:color/background_dark"
+          android:id="@+id/editemail"
+/>
+              </com.google.android.material.textfield.TextInputLayout>
+              <com.google.android.material.textfield.TextInputLayout
+                      android:layout_width="match_parent"
+                         android:hint="Enter PassWord"
+                      android:padding="8dp"
+                      android:layout_height="wrap_content">
+<EditText
+
+        android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="16sp"
+          android:inputType="textPassword"
+          android:textColor="@android:color/background_dark"
+          android:shadowColor="@android:color/background_dark"
+          android:id="@+id/edtipass"
+/>
+              </com.google.android.material.textfield.TextInputLayout>
+          </LinearLayout>
+      </androidx.cardview.widget.CardView>
+      <Button
+              android:elevation="5dp"
+              android:id="@+id/btnlogin"
+              android:shadowColor="@android:color/background_light"
+              android:textColor="@android:color/background_light"
+              android:textAllCaps="false"
+              android:textSize="22sp"
+              android:text="Login"
+              android:background="@drawable/custom_back_ground"
+              android:layout_width="match_parent"
+              android:layout_marginLeft="50dp"
+              android:layout_marginTop="30dp"
+              android:layout_marginRight="50dp"
+              android:layout_height="wrap_content"
+      android:layout_below="@+id/c1"/>
+    <TextView
+            android:shadowColor="#4862F3"
+            android:textSize="18sp"
+            android:textColor="#4862F3"
+            android:text="Forget PassWord ?"
+            android:id="@+id/txtforgetpass"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+
+              android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"/>
+</RelativeLayout>

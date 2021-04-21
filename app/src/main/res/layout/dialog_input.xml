@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:shadowColor="@android:color/background_dark"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:gravity="center"
+            android:hint="Input Weight"
+            android:id="@+id/editweight"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnenter"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textAllCaps="false"
+            android:shadowColor="@android:color/background_light"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp"
+            android:text="Enter"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_back_ground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

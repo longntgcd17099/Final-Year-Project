@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <ImageView android:layout_width="42dp" android:layout_height="42dp"
+    android:src="@drawable/dumbbells"
+    />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:gravity="center"
+
+              android:textSize="18sp"
+              android:padding="7dp"
+              android:textColor="@android:color/background_dark"
+              android:shadowColor="@android:color/background_dark"
+              android:id="@+id/txttile"/>
+</LinearLayout>

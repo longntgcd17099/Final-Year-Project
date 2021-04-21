@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="350dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   app:cardCornerRadius="15dp"
+                                   app:cardElevation="8dp"
+                                   android:layout_height="wrap_content">
+ <LinearLayout android:layout_width="350dp"
+               android:orientation="vertical"
+               android:layout_height="wrap_content">
+     <TimePicker android:layout_width="match_parent" android:layout_height="wrap_content"
+     android:id="@+id/timepicker"/>
+     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+     android:layout_gravity="center"
+     android:textSize="18sp"
+     android:padding="7dp"
+     android:textColor="@android:color/holo_red_dark"
+     android:shadowColor="@android:color/holo_red_dark"
+     android:id="@+id/txttimer"/>
+     <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+     android:layout_gravity="center"
+     android:background="@drawable/custom_back_ground"
+     android:text="Hẹn Giờ"
+             android:id="@+id/btnhengio"
+     android:textColor="@android:color/background_light"
+     android:shadowColor="@android:color/background_light"
+             android:layout_marginTop="15dp"
+     android:layout_marginBottom="15dp"/>
+
+ </LinearLayout>
+</androidx.cardview.widget.CardView>

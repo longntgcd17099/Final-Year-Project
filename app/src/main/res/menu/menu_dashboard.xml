@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group
+android:checkableBehavior="single">
+<item
+        android:id="@+id/excerises"
+android:title="Exercises"
+android:icon="@drawable/practice"
+/>
+    <item
+            android:id="@+id/workout"
+            android:title="Workouts"
+            android:icon="@drawable/dumbbells"
+    />
+    <item
+            android:id="@+id/profile"
+            android:title="Profile"
+            android:icon="@drawable/profile"
+    />
+    <item
+            android:id="@+id/history"
+            android:title="Lịch Sử"
+            android:icon="@drawable/history"
+    />
+    <item
+            android:id="@+id/logout"
+            android:title="Sign Out"
+            android:icon="@drawable/profile"
+    />
+    <item
+            android:id="@+id/settings"
+            android:title="Set Time"
+            android:icon="@drawable/clock"
+    />
+</group>
+</menu>
